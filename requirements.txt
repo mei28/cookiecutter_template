@@ -1,0 +1,19 @@
+
+# local package
+-e .
+
+{% if cookiecutter.python_interpreter != 'python3' %}
+
+# backwards compatibility
+pathlib2
+{% endif %}
+
+# external requirements
+click
+pandas 
+numpy
+matplotlib
+scikit-learn
+seaborn
+jupyter
+flake8
